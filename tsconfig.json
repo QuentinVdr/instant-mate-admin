@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    // JavaScript and TypeScript Compilation
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "incremental": true,
+
+    // Module Handling
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+
+    // Strict Checking and Error Reporting
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "useUnknownInCatchVariables": true,
+
+    // Build Configuration
+    "noEmit": true,
+    "skipLibCheck": true,
+
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
